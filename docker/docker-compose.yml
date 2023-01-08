@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: 
+      context: ../frontend
+      dockerfile: dockerfile
+    volumes:
+      - ../frontend:/app
+      - /app/node_modules
