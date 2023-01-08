@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  webpackDevMiddleware: (config) => {
+  webpack: (config) => {
     config.watchOptions = {
       poll: 1000,
       aggregateTimeout: 300,

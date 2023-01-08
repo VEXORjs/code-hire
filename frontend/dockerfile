@@ -4,19 +4,23 @@ WORKDIR /app
 
 COPY ./package*.json ./
 
+
 FROM base AS installer
 
 RUN npm ci
 
 COPY . .
 
+
 FROM installer AS test
 
 CMD ["npm", "test"]
 
+
 FROM installer AS dev
 
 CMD ["npm", "run", "dev"]
+
 
 FROM base AS prod
 
