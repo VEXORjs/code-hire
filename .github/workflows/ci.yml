@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
   tests:
-    runs_on: ubuntu-20.04
+    runs_on: ubuntu-latest
     steps:
       - name: Checkout Code Repository
         uses: actions/checkout@v3
