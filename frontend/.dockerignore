@@ -2,3 +2,4 @@ node_modules/
 .next/
 .gitignore
 .dockerignore
+/public/mockServiceWorker.js
